@@ -1,0 +1,34 @@
+#include <stdio.h> 
+int main () {
+    float fsc ; 
+    float nts ; 
+    
+    printf ("Enter your fsc marks = ") ; 
+    scanf  ("%.2f" , &fsc) ; 
+    
+    printf ("Enter your nts marks = ") ;
+    scanf  ("%.2f" , &nts) ; 
+    
+    if (fsc>= 70 && nts>=70) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'IT' Department of , Oxford University.\n") ; 
+    }
+    else if (fsc>70 && nts >=60) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'Electronics' Department of , Oxford University.\n") ; 
+    }
+    else if (fsc > 70 && nts >=50) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'Telocommunication' Department of , Oxford University.\n") ; 
+    }
+    else if (60>=fsc<=70 && nts >=50) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'IT' Department of , MIT University.\n") ; 
+    }
+    else if (50>=fsc<=59 && nts >=50) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'Chemical Engineering' Department of , MIT University.\n") ; 
+    }
+    else if (40>=fsc<=50 && nts>=50) {
+        printf ("Congratulations!.\nYou have been allocated a seat in 'Computer Engineering' Department of , MIT University.\n") ; 
+    }
+    else {
+        printf ("Not Eligile.\n") ;
+    }
+    return 0 ;
+}
