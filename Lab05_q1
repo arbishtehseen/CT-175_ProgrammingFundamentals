@@ -1,0 +1,30 @@
+/ Arbish Randhawah
+// CT-25053
+// Section B
+#include <stdio.h>
+int main () {
+    char character ; 
+
+    
+    printf ("Are you sure, to delete this [Y/y] / [N/n]? \n") ;
+    
+    printf ("Enter your choice = ") ; 
+    scanf ("%c" , &character) ; 
+    
+    switch (character) {
+        case 'Y' : 
+        case 'y' :
+        printf ("Deleted Successfully.\n") ; 
+        break ; 
+        
+        
+        
+        case 'N': 
+        case 'n' :
+        printf ("Delete cancelled.\n") ; 
+        break ;
+        
+        default : 
+        printf ("Invalid Input.");
+     }
+}
