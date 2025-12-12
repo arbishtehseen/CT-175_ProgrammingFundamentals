@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main () {
+    char coffeetype ; 
+    char cupsize ; 
+    int doubletime = 25 ; 
+    
+    printf ("What would you like to have? Black coffee or White coffee?\n") ; 
+    printf ("For Black enter : B/b.\nFor White enter : W/w.\n") ; 
+    printf ("Enter your choice = ") ; 
+    scanf  (" %c" , &coffeetype) ; 
+    
+    printf ("Cup Size:\nDouble : D/d or\nRegular : R/r\n") ; 
+    printf ("Enter your choice = ") ; 
+    scanf  (" %c" , &cupsize) ;
+    
+    if (cupsize == 'D' || cupsize == 'd') {
+        doubletime = doubletime + (doubletime/2) ; 
+    }
+    else {
+        doubletime = 25 ; 
+    }
+    
+    switch (coffeetype) {
+        case 'B' :
+        case 'b' : 
+        printf ("You chose Black coffee.\n") ; 
+        printf ("Operation         BlackCoffee\n") ; 
+        printf ("Put Water          20 mins\n") ; 
+        printf ("Sugar              20 mins\n") ; 
+        printf ("Mix Well           %d mins\n" , doubletime ) ; 
+        printf ("Add Coffee         15 mins\n") ; 
+        printf ("Mix Well           25 mins.\n") ;
+        break ; 
+        
+        case 'W' :
+        case 'w' :
+        printf ("You chose White coffee.\n") ; 
+        printf ("Operation         BlackCoffee\n") ; 
+        printf ("Put Water          15 mins\n") ; 
+        printf ("Sugar              15 mins\n") ; 
+        printf ("Mix Well           %d mins\n" , doubletime) ; 
+        printf ("Add Coffee         2 mins\n") ; 
+        printf ("Add Milk           4 mins\n") ; 
+        printf ("Mix Well           20 mins.\n") ;
+        break ; 
+        
+    }
+    
+}
