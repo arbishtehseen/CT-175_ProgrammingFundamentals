@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main () {
+     char order ; 
+     int quantity  ; 
+     int burgerprice = 200, friesprice = 50 , pizzaprice = 500 , sandwichprice = 150; 
+     int bill ; 
+     
+     printf ("Please select from the following Menu :\n") ; 
+     printf ("B = Burger. (200Rs.)\n") ; 
+     printf ("F = French Fries. (50Rs)\n") ;
+     printf ("P = Pizza. (500Rs)\n") ; 
+     printf ("S = Sandwich. (150Rs)\n") ; 
+     
+     printf("What would you like to order from\nthe above given menu?\n");
+     printf ("Enter your choice = ") ; 
+     scanf  (" %c" , &order) ; 
+     
+     printf ("Enter the quantity = ") ; 
+     scanf (" %d" , &quantity) ; 
+     
+     switch (order) {
+         case 'B' : 
+         bill = quantity*burgerprice ;
+         printf ("Bill = %d" , bill) ;
+         break ; 
+         
+         case 'F' : 
+         bill = quantity*friesprice ; 
+         printf ("Bill = %d" , bill) ; 
+         break ; 
+         
+         case 'P' : 
+         bill = quantity*pizzaprice ; 
+         printf ("Bill = %d" , bill) ;
+         break ; 
+         
+         case 'S' :
+         bill = quantity*sandwichprice ; 
+         printf ("Bill = %d" , bill) ; 
+         break ; 
+         
+         default : 
+         printf ("Not Available!") ;
+     }
+     
+     return 0 ;
+}
+     
+     
+     
+     
